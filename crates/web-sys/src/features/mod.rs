@@ -8668,6 +8668,12 @@ mod gen_WebTransportReceiveStreamStats;
 #[cfg(feature = "WebTransportReceiveStreamStats")]
 pub use gen_WebTransportReceiveStreamStats::*;
 
+#[cfg(feature = "WebTransportSendStream")]
+#[allow(non_snake_case)]
+mod gen_WebTransportSendStream;
+#[cfg(feature = "WebTransportSendStream")]
+pub use gen_WebTransportSendStream::*;
+
 #[cfg(feature = "WebTransportSendStreamOptions")]
 #[allow(non_snake_case)]
 mod gen_WebTransportSendStreamOptions;

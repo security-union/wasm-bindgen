@@ -19,4 +19,12 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WebTransportBidirectionalStream`, `WebTransportReceiveStream`*"]
     pub fn readable(this: &WebTransportBidirectionalStream) -> WebTransportReceiveStream;
+    #[cfg(feature = "WebTransportSendStream")]
+    # [wasm_bindgen (structural , method , getter , js_class = "WebTransportBidirectionalStream" , js_name = writable)]
+    #[doc = "Getter for the `writable` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebTransportBidirectionalStream/writable)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `WebTransportBidirectionalStream`, `WebTransportSendStream`*"]
+    pub fn writable(this: &WebTransportBidirectionalStream) -> WebTransportSendStream;
 }

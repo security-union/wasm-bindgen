@@ -88,6 +88,11 @@ dictionary WebTransportStats {
   WebTransportDatagramStats datagrams;
 };
 
+[Exposed=(Window,Worker), SecureContext, Transferable]
+interface WebTransportSendStream : WritableStream {
+  Promise<WebTransportSendStreamStats> getStats();
+};
+
 dictionary WebTransportDatagramStats {
   DOMHighResTimeStamp timestamp;
   unsigned long long expiredOutgoing;
